@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Test_Dice {
+
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+  	// TODO Auto-generated method stub
+  	Dice numberOfDices = new Dice();
+  	Scanner input = new Scanner( System.in );
+  	
+  	System.out.println( "Please enter number of Dices: ");
+  	int getNum = input.nextInt();
+  	int output;
+  	int output2;
+  	output = numberOfDices.RollDice( getNum );
+  	output2 = Dice.Roll_1_Dice();
+  	
+  	System.out.printf( " D1  %d\n", output );
+  	System.out.printf( " D2  %d\n", output2  );
+  	
+  	input.close();
+
+  }
+
+}
