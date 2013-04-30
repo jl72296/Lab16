@@ -19,6 +19,18 @@ public class Test_Dice {
   	
   	System.out.printf( " D1  %d\n", output );
   	System.out.printf( " D2  %d\n", output2  );
+
+///////////////////////////////////////////////////////////////////////////////////////
+  System.out.println( "Please enter number of Dices: ");
+  	int getDNum = input.nextInt();
+  	System.out.println( "Please enter number the highest value for dice: ");
+  	int getH = input.nextInt();
+  	
+  	int output3;
+  	output3 = Dice.Roll_Multiple_Dices( getDNum, getH );
+  	
+  	System.out.printf( " D2  %d\n", output3  );
+  	
   	
   	input.close();
 
