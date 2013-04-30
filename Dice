@@ -1,0 +1,19 @@
+
+public class Dice {
+  public int RollDice( int numDices )
+  {
+  	int maxValue;
+  	int rollDices;
+  	maxValue = numDices * 6;
+  	rollDices = 1 + (int)(Math.random()*maxValue);
+  	return rollDices;
+  }
+  
+  public static int Roll_1_Dice()
+  {
+  	int rollDice;
+  	rollDice = 1 + (int)(Math.random()*6);
+  	return rollDice;
+  }
+
+}
