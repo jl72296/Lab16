@@ -21,6 +21,7 @@ public class Test_Dice {
   	System.out.printf( " D2  %d\n", output2  );
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
   System.out.println( "Please enter number of Dices: ");
   	int getDNum = input.nextInt();
   	System.out.println( "Please enter number the highest value for dice: ");
