@@ -1,10 +1,20 @@
-public class Dice {
+public class Dice { //Class
+  
+  private int Total_Rolls;
+  static int s_Rolls;
+  
+  public Dice()
+  {
+  	Total_Rolls = 0;
+  }
+  
   public int RollDice( int numDices )
   {
   	int maxValue;
   	int rollDices;
   	maxValue = numDices * 6;
   	rollDices = 1 + (int)(Math.random()*maxValue);
+  	Total_Rolls = Total_Rolls + numDices;
   	return rollDices;
   }
   
@@ -12,16 +22,33 @@ public class Dice {
   {
   	int rollDice;
   	rollDice = 1 + (int)(Math.random()*6);
+  	s_Rolls = s_Rolls + 1;
   	return rollDice;
   }
-
-  public static int Roll_Multiple_Dices( int numDices, int highestValue )
+  
+  public static int Roll_Multiple_Dices( int numDices, int diceHighestValue )
   {
   	int rollDices;
   	int maxValue;
-  	maxValue = numDices * highestValue;
+  	maxValue = numDices * diceHighestValue;
   	rollDices = 1 + (int)(Math.random()*maxValue);
+  	s_Rolls = s_Rolls + numDices;
   	return rollDices;
   }
+  
+  public static int sRollCount()
+  {
+  	int sCount;
+  	sCount = s_Rolls;
+  	return sCount;
+  }
+  
+  public int rollCount()
+  {
+  	int count;
+  	count = Total_Rolls;
+  	return count;
+  }
+  
 
 }
