@@ -7,6 +7,22 @@ public class Test_Dice {
    */
   public static void main(String[] args) {
   	// TODO Auto-generated method stub
+  	Dice D1 = new Dice();
+  	Dice D2 = new Dice();
+  	
+  	int d,sD,c,sC;
+  	
+  	d = D1.RollDice(3);
+  	sD = Dice.Roll_1_Dice();
+  	c = D1.rollCount();
+  	sC = Dice.sRollCount();
+  	
+  	System.out.printf( " Non-S Dice  %d\n", d  );
+  	System.out.printf( " # of Rolls  %d\n", c  );
+  	System.out.printf( " S Dice  %d\n", sD  );
+  	System.out.printf( " # of Rolls  %d\n", sC  );
+  	
+  	/*
   	Dice numberOfDices = new Dice();
   	Scanner input = new Scanner( System.in );
   	
@@ -16,13 +32,12 @@ public class Test_Dice {
   	int output2;
   	output = numberOfDices.RollDice( getNum );
   	output2 = Dice.Roll_1_Dice();
-  	
   	System.out.printf( " D1  %d\n", output );
   	System.out.printf( " D2  %d\n", output2  );
-
-///////////////////////////////////////////////////////////////////////////////////////
-
-  System.out.println( "Please enter number of Dices: ");
+  	
+  	////////////////////////////////////////////////////////////////////////////////////////
+  
+  	System.out.println( "Please enter number of Dices: ");
   	int getDNum = input.nextInt();
   	System.out.println( "Please enter number the highest value for dice: ");
   	int getH = input.nextInt();
@@ -32,8 +47,8 @@ public class Test_Dice {
   	
   	System.out.printf( " D2  %d\n", output3  );
   	
-  	
   	input.close();
+  	*/
 
   }
 
